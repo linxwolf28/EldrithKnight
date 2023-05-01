@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: e6517bae66769f54793d469d99ac1307
+guid: 2e5ec40ac22a5584ab034b3e076a00ee
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4483086118760611325
-    second: espada_bala_suprema_0
+      213: 7951565736523353193
+    second: espada_bala2_0
   - first:
-      213: -6515621442786020047
-    second: espada_bala_suprema_1
+      213: 4313977647658906650
+    second: espada_bala2_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: espada_bala_suprema_0
+      name: espada_bala2_0
       rect:
         serializedVersion: 2
-        x: 40
-        y: 705
-        width: 320
-        height: 95
+        x: 24
+        y: 423
+        width: 192
+        height: 57
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -123,20 +123,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfdf536921f173e30800000000000000
-      internalID: 4483086118760611325
+      spriteID: 96c44ad78e2a95e60800000000000000
+      internalID: 7951565736523353193
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: espada_bala_suprema_1
+      name: espada_bala2_1
       rect:
         serializedVersion: 2
-        x: 40
-        y: 155
-        width: 350
-        height: 190
+        x: 24
+        y: 93
+        width: 210
+        height: 114
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,8 +144,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13532dba1dcd395a0800000000000000
-      internalID: -6515621442786020047
+      spriteID: a143fa960d35edb30800000000000000
+      internalID: 4313977647658906650
       vertices: []
       indices: 
       edges: []
