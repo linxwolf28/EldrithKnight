@@ -8,6 +8,10 @@ public class DisparadorJugador : MonoBehaviour
 
     [SerializeField] private GameObject bala;
 
+    [SerializeField] private bool powerUp=false;
+
+    [SerializeField] private GameObject bala2;
+
     private void Update()
     {
         if (Input.GetButtonDown("Fire1"))
@@ -18,6 +22,13 @@ public class DisparadorJugador : MonoBehaviour
 
     private void Disparar()
     {
-        Instantiate(bala, controladorDisparo.position, controladorDisparo.rotation);
+      
+        if (powerUp == false){
+            Instantiate(bala, controladorDisparo.position, controladorDisparo.rotation);
+        }
+        else
+        {
+            Instantiate(bala2, controladorDisparo.position, controladorDisparo.rotation);
+        }
     }
 }
