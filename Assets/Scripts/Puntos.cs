@@ -8,6 +8,7 @@ public class Puntos : MonoBehaviour
 
     public TextMeshProUGUI puntos;
     public GameObject[] vidas;
+
     
     void Update()
     {
