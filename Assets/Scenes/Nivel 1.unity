@@ -156,7 +156,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_RootOrder
-      value: 64
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_LocalScale.y
@@ -408,7 +408,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_RootOrder
-      value: 78
+      value: 79
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_LocalScale.y
@@ -456,6 +456,146 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
+--- !u!1 &60694927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 60694930}
+  - component: {fileID: 60694929}
+  - component: {fileID: 60694928}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &60694928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60694927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b15ff52e08449342a9ee2a1b928dcf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!82 &60694929
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60694927}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.346
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1.0523977
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &60694930
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60694927}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0025374442, w: -0.99999684}
+  m_LocalPosition: {x: -9.19, y: -2.32, z: 0}
+  m_LocalScale: {x: 0.384, y: 0.384, z: 0.384}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 62
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &76587290
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,7 +659,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_RootOrder
-      value: 71
+      value: 72
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_LocalScale.y
@@ -666,6 +806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 2
+  sonidoMoneda: {fileID: 8300000, guid: 70b9936bf6362ee49b2fdab3e8d7c619, type: 3}
 --- !u!61 &114216150
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1127,7 +1268,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_RootOrder
-      value: 69
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_LocalScale.y
@@ -1299,7 +1440,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_RootOrder
-      value: 80
+      value: 81
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_LocalScale.y
@@ -1358,14 +1499,26 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 3.81
       objectReference: {fileID: 0}
+    - target: {fileID: 97393198393287139, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
+      propertyPath: sonidoMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: dd0c95b464ae24d4fa6d0474c6b323fc, type: 3}
     - target: {fileID: 97393199407611265, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 17.87
       objectReference: {fileID: 0}
+    - target: {fileID: 97393199407611270, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
+      propertyPath: sonidoMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: dd0c95b464ae24d4fa6d0474c6b323fc, type: 3}
     - target: {fileID: 97393199577886896, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.23
       objectReference: {fileID: 0}
+    - target: {fileID: 97393199577886901, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
+      propertyPath: sonidoMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: dd0c95b464ae24d4fa6d0474c6b323fc, type: 3}
     - target: {fileID: 3915981957723853544, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
       propertyPath: m_Name
       value: MonedasAmarillas (2)
@@ -1449,7 +1602,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_RootOrder
-      value: 73
+      value: 74
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_LocalScale.y
@@ -1761,10 +1914,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 2.71
       objectReference: {fileID: 0}
+    - target: {fileID: 97393198393287139, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
+      propertyPath: sonidoMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: dd0c95b464ae24d4fa6d0474c6b323fc, type: 3}
     - target: {fileID: 97393199407611265, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.77
       objectReference: {fileID: 0}
+    - target: {fileID: 97393199407611270, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
+      propertyPath: sonidoMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: dd0c95b464ae24d4fa6d0474c6b323fc, type: 3}
+    - target: {fileID: 97393199577886901, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
+      propertyPath: sonidoMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: dd0c95b464ae24d4fa6d0474c6b323fc, type: 3}
     - target: {fileID: 3915981957723853544, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
       propertyPath: m_Name
       value: MonedasAmarillas (3)
@@ -2246,7 +2411,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 384976527}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.1688023, y: -0.90640354, z: -10}
+  m_LocalPosition: {x: -4.7298717, y: -0.90640354, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2507,6 +2672,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 97393198393287139, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
+      propertyPath: sonidoMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: dd0c95b464ae24d4fa6d0474c6b323fc, type: 3}
+    - target: {fileID: 97393199407611270, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
+      propertyPath: sonidoMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: dd0c95b464ae24d4fa6d0474c6b323fc, type: 3}
+    - target: {fileID: 97393199577886901, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
+      propertyPath: sonidoMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: dd0c95b464ae24d4fa6d0474c6b323fc, type: 3}
     - target: {fileID: 3915981957723853544, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
       propertyPath: m_Name
       value: MonedasAmarillas (7)
@@ -2671,7 +2848,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_RootOrder
-      value: 76
+      value: 77
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_LocalScale.y
@@ -3264,7 +3441,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7955465527844705253, guid: ce73f620c82e3ab4192ebdb5b694ceaf, type: 3}
       propertyPath: m_RootOrder
-      value: 82
+      value: 83
       objectReference: {fileID: 0}
     - target: {fileID: 7955465527844705253, guid: ce73f620c82e3ab4192ebdb5b694ceaf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3341,7 +3518,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_RootOrder
-      value: 72
+      value: 73
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_LocalScale.y
@@ -3453,6 +3630,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 137080616610871375, guid: f341526ea19ef1a4d9d44d900c737515, type: 3}
+      propertyPath: pocion
+      value: 
+      objectReference: {fileID: 8300000, guid: f593fe3e6121e6249a2437b91d3f6ce5, type: 3}
     - target: {fileID: 3768177169410341818, guid: f341526ea19ef1a4d9d44d900c737515, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -3779,6 +3960,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 2
+  sonidoMoneda: {fileID: 8300000, guid: 70b9936bf6362ee49b2fdab3e8d7c619, type: 3}
 --- !u!61 &863319702
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3816,10 +3998,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 3.72
       objectReference: {fileID: 0}
+    - target: {fileID: 97393198393287139, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
+      propertyPath: sonidoMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: dd0c95b464ae24d4fa6d0474c6b323fc, type: 3}
     - target: {fileID: 97393199407611265, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.2
       objectReference: {fileID: 0}
+    - target: {fileID: 97393199407611270, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
+      propertyPath: sonidoMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: dd0c95b464ae24d4fa6d0474c6b323fc, type: 3}
+    - target: {fileID: 97393199577886901, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
+      propertyPath: sonidoMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: dd0c95b464ae24d4fa6d0474c6b323fc, type: 3}
     - target: {fileID: 3915981957723853544, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
       propertyPath: m_Name
       value: MonedasAmarillas (5)
@@ -3914,6 +4108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 3
+  sonidoMoneda: {fileID: 8300000, guid: 70b9936bf6362ee49b2fdab3e8d7c619, type: 3}
 --- !u!1001 &909979114
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4271,7 +4466,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_RootOrder
-      value: 74
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_LocalScale.y
@@ -4352,7 +4547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_RootOrder
-      value: 81
+      value: 82
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_LocalScale.y
@@ -4606,7 +4801,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 63
+  m_RootOrder: 64
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &979504469
 GameObject:
@@ -4896,7 +5091,7 @@ Transform:
   m_LocalScale: {x: 0.384, y: 0.384, z: 0.384}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 83
+  m_RootOrder: 84
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.291}
 --- !u!61 &981287628
 BoxCollider2D:
@@ -5011,6 +5206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 2
+  sonidoMoneda: {fileID: 8300000, guid: 70b9936bf6362ee49b2fdab3e8d7c619, type: 3}
 --- !u!61 &1006430802
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5048,10 +5244,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 3.88
       objectReference: {fileID: 0}
+    - target: {fileID: 97393198393287139, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
+      propertyPath: sonidoMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: dd0c95b464ae24d4fa6d0474c6b323fc, type: 3}
     - target: {fileID: 97393199407611265, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.2
       objectReference: {fileID: 0}
+    - target: {fileID: 97393199407611270, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
+      propertyPath: sonidoMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: dd0c95b464ae24d4fa6d0474c6b323fc, type: 3}
+    - target: {fileID: 97393199577886901, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
+      propertyPath: sonidoMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: dd0c95b464ae24d4fa6d0474c6b323fc, type: 3}
     - target: {fileID: 3915981957723853544, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
       propertyPath: m_Name
       value: MonedasAmarillas (4)
@@ -8244,6 +8452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 2
+  sonidoMoneda: {fileID: 8300000, guid: 70b9936bf6362ee49b2fdab3e8d7c619, type: 3}
 --- !u!61 &1129424819
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8303,7 +8512,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_RootOrder
-      value: 75
+      value: 76
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_LocalScale.y
@@ -8415,6 +8624,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 137080616610871375, guid: f341526ea19ef1a4d9d44d900c737515, type: 3}
+      propertyPath: pocion
+      value: 
+      objectReference: {fileID: 8300000, guid: f593fe3e6121e6249a2437b91d3f6ce5, type: 3}
     - target: {fileID: 3768177169410341818, guid: f341526ea19ef1a4d9d44d900c737515, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -8476,14 +8689,26 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 7.81
       objectReference: {fileID: 0}
+    - target: {fileID: 97393198393287139, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
+      propertyPath: sonidoMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: dd0c95b464ae24d4fa6d0474c6b323fc, type: 3}
     - target: {fileID: 97393199407611265, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 22.99
       objectReference: {fileID: 0}
+    - target: {fileID: 97393199407611270, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
+      propertyPath: sonidoMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: dd0c95b464ae24d4fa6d0474c6b323fc, type: 3}
     - target: {fileID: 97393199577886896, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.42
       objectReference: {fileID: 0}
+    - target: {fileID: 97393199577886901, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
+      propertyPath: sonidoMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: dd0c95b464ae24d4fa6d0474c6b323fc, type: 3}
     - target: {fileID: 3915981957723853544, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
       propertyPath: m_Name
       value: MonedasAmarillas (6)
@@ -8876,6 +9101,7 @@ MonoBehaviour:
   bala: {fileID: 4340959458367143280, guid: b6d136cdd16e271419d0f2186c01ec01, type: 3}
   powerUp: 0
   bala2: {fileID: 5196340210288999445, guid: 548dd17f412c0b6459375cff874396db, type: 3}
+  disparo: {fileID: 8300000, guid: 5bfba9e7a8948f44aa064d9773d607a4, type: 3}
 --- !u!95 &1210704586
 Animator:
   serializedVersion: 3
@@ -8925,6 +9151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 2
+  sonidoMoneda: {fileID: 8300000, guid: 70b9936bf6362ee49b2fdab3e8d7c619, type: 3}
 --- !u!61 &1213524616
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9098,7 +9325,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_RootOrder
-      value: 79
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_LocalScale.y
@@ -9229,6 +9456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 2
+  sonidoMoneda: {fileID: 8300000, guid: 70b9936bf6362ee49b2fdab3e8d7c619, type: 3}
 --- !u!61 &1293871900
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9273,6 +9501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 3
+  sonidoMoneda: {fileID: 8300000, guid: 70b9936bf6362ee49b2fdab3e8d7c619, type: 3}
 --- !u!61 &1299395032
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9343,6 +9572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 2
+  sonidoMoneda: {fileID: 8300000, guid: 70b9936bf6362ee49b2fdab3e8d7c619, type: 3}
 --- !u!1 &1392376293
 GameObject:
   m_ObjectHideFlags: 0
@@ -9612,10 +9842,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 97393198393287139, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
+      propertyPath: sonidoMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: dd0c95b464ae24d4fa6d0474c6b323fc, type: 3}
     - target: {fileID: 97393199407611265, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.88
       objectReference: {fileID: 0}
+    - target: {fileID: 97393199407611270, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
+      propertyPath: sonidoMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: dd0c95b464ae24d4fa6d0474c6b323fc, type: 3}
+    - target: {fileID: 97393199577886901, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
+      propertyPath: sonidoMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: dd0c95b464ae24d4fa6d0474c6b323fc, type: 3}
     - target: {fileID: 3915981957723853544, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
       propertyPath: m_Name
       value: MonedasAmarillas (1)
@@ -9786,7 +10028,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_RootOrder
-      value: 67
+      value: 68
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_LocalScale.y
@@ -10074,7 +10316,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_RootOrder
-      value: 70
+      value: 71
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_LocalScale.y
@@ -10212,7 +10454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_RootOrder
-      value: 77
+      value: 78
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_LocalScale.y
@@ -10358,7 +10600,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_RootOrder
-      value: 68
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_LocalScale.y
@@ -10766,6 +11008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 3
+  sonidoMoneda: {fileID: 8300000, guid: 70b9936bf6362ee49b2fdab3e8d7c619, type: 3}
 --- !u!1 &1811673288 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4107440749854874179, guid: 80ed16b9396666b4297fba1444298646, type: 3}
@@ -10784,6 +11027,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 2
+  sonidoMoneda: {fileID: 8300000, guid: 70b9936bf6362ee49b2fdab3e8d7c619, type: 3}
 --- !u!61 &1811673291
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10931,6 +11175,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 137080616610871375, guid: f341526ea19ef1a4d9d44d900c737515, type: 3}
+      propertyPath: pocion
+      value: 
+      objectReference: {fileID: 8300000, guid: f593fe3e6121e6249a2437b91d3f6ce5, type: 3}
     - target: {fileID: 3768177169410341818, guid: f341526ea19ef1a4d9d44d900c737515, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -11434,7 +11682,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_RootOrder
-      value: 66
+      value: 67
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_LocalScale.y
@@ -11743,6 +11991,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 2
+  sonidoMoneda: {fileID: 8300000, guid: 70b9936bf6362ee49b2fdab3e8d7c619, type: 3}
 --- !u!1 &2119677432
 GameObject:
   m_ObjectHideFlags: 0
@@ -11867,7 +12116,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_RootOrder
-      value: 65
+      value: 66
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_LocalScale.y
@@ -12055,6 +12304,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 97393198393287139, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
+      propertyPath: sonidoMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: dd0c95b464ae24d4fa6d0474c6b323fc, type: 3}
+    - target: {fileID: 97393199407611270, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
+      propertyPath: sonidoMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: dd0c95b464ae24d4fa6d0474c6b323fc, type: 3}
+    - target: {fileID: 97393199577886901, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
+      propertyPath: sonidoMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: dd0c95b464ae24d4fa6d0474c6b323fc, type: 3}
     - target: {fileID: 3915981957723853544, guid: 035cb0168ba1c3c45a76e1d41eccbdb0, type: 3}
       propertyPath: m_Name
       value: MonedasAmarillas
@@ -12593,7 +12854,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_RootOrder
-      value: 62
+      value: 63
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784865, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12644,6 +12905,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 137080616610871375, guid: f341526ea19ef1a4d9d44d900c737515, type: 3}
+      propertyPath: pocion
+      value: 
+      objectReference: {fileID: 8300000, guid: f593fe3e6121e6249a2437b91d3f6ce5, type: 3}
     - target: {fileID: 3768177169410341818, guid: f341526ea19ef1a4d9d44d900c737515, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -12745,6 +13010,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4619193750254916860, guid: 804d4b20bd8493642804aee096f24430, type: 3}
+      propertyPath: sonidoMoneda
+      value: 
+      objectReference: {fileID: 8300000, guid: 70b9936bf6362ee49b2fdab3e8d7c619, type: 3}
     - target: {fileID: 4903643908590068141, guid: 804d4b20bd8493642804aee096f24430, type: 3}
       propertyPath: m_Name
       value: Esmeralda

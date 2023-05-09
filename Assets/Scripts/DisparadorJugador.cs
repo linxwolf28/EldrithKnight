@@ -11,6 +11,8 @@ public class DisparadorJugador : MonoBehaviour
     [SerializeField] private bool powerUp=false;
 
     [SerializeField] private GameObject bala2;
+    
+    public AudioClip disparo;
 
     private void Update()
     {
@@ -24,11 +26,15 @@ public class DisparadorJugador : MonoBehaviour
     {
       
         if (powerUp == false){
+            AudioManager.Instance.ReproducirSonido(disparo);
             Instantiate(bala, controladorDisparo.position, controladorDisparo.rotation);
+            
         }
         else
         {
+            AudioManager.Instance.ReproducirSonido(disparo);
             Instantiate(bala2, controladorDisparo.position, controladorDisparo.rotation);
+            
         }
     }
 }

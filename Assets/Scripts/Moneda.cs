@@ -6,6 +6,7 @@ public class Moneda : MonoBehaviour
 {
 
     public int valor = 1;
+    public AudioClip sonidoMoneda;
    
    
     private void OnTriggerEnter2D(Collider2D collision)
@@ -14,6 +15,7 @@ public class Moneda : MonoBehaviour
         {
             GameManager.Instance.SumarPuntos(valor);
             Destroy(this.gameObject);
+            AudioManager.Instance.ReproducirSonido(sonidoMoneda);
         }
     }
 }
