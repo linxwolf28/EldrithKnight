@@ -10,11 +10,12 @@ public class Pocion : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             bool vidaRecuperada=GameManager.Instance.RecuperarVida();
-            AudioManager.Instance.ReproducirSonido(pocion);
+            
             if (vidaRecuperada)
             {
                 
                 Destroy(this.gameObject);
+                AudioManager.Instance.ReproducirSonido(pocion);
             }
             
         }
