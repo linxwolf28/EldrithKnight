@@ -2,30 +2,43 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JefeFinal : MonoBehaviour
+public class Enemigo2_2 : MonoBehaviour
 {
+
+    public GameObject bullet;
+    public Transform bulletPos;
+    [SerializeField] private float vida;
+
     public float cooldownAtaque;
 
     private bool volverAtacar = true;
 
     private SpriteRenderer spriteRenderer;
-    public GameObject bullet;
-    public Transform bulletPos;
+
     private float timer;
 
-    [SerializeField] private float vida;
-    [SerializeField] public GameObject[] vidas;
-
-    
-
-
-    public void Start()
+    // Start is called before the first frame update
+    void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
+    // Update is called once per frame
+    void Update()
+    {
+        timer += Time.deltaTime;
 
+        if (timer > 2)
+        {
+            timer = 0;
+            shoot();
+        }
+    }
 
+    void shoot()
+    {
+        Instantiate(bullet, bulletPos.position, Quaternion.identity);
+    }
 
     public void TomarDaño(float daño)
     {
@@ -33,7 +46,6 @@ public class JefeFinal : MonoBehaviour
         if (vida <= 0)
         {
             Muerte();
-            
         }
 
     }
@@ -73,19 +85,4 @@ public class JefeFinal : MonoBehaviour
 
     }
 
-    void Update()
-    {
-        timer += Time.deltaTime;
-
-        if (timer > 2)
-        {
-            timer = 0;
-            shoot();
-        }
-    }
-
-    void shoot()
-    {
-        Instantiate(bullet, bulletPos.position, Quaternion.identity);
-    }
 }

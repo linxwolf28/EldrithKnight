@@ -1510,7 +1510,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 21a9474a39cca564cacf53b4359dfa13, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.145
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1594,6 +1594,36 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &312887205
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 312887206}
+  m_Layer: 0
+  m_Name: BulletPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &312887206
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312887205}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.97, y: 1.26, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 865646666}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &323278069
 GameObject:
   m_ObjectHideFlags: 0
@@ -3434,6 +3464,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &865646665 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1128910445095750060, guid: 3f1e9f391a8434c4caa701eab05cebc3, type: 3}
+  m_PrefabInstance: {fileID: 1128910445733521470}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &865646666 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1128910445095750058, guid: 3f1e9f391a8434c4caa701eab05cebc3, type: 3}
+  m_PrefabInstance: {fileID: 1128910445733521470}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &865646668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865646665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df6d5c9745a7a424e84921d1ffda5f6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownAtaque: 1
+  bullet: {fileID: 728298689457651547, guid: f908153d4381dcf46857be3631abcc98, type: 3}
+  bulletPos: {fileID: 312887206}
+  vida: 10
+  vidas:
+  - {fileID: 2103539131}
+  - {fileID: 951787105}
+  - {fileID: 195367279}
+  - {fileID: 1826607516}
+  - {fileID: 882356101}
+  - {fileID: 1014816620}
+  - {fileID: 754397086}
+  - {fileID: 1402222694}
+  - {fileID: 2110758384}
 --- !u!1 &866045215
 GameObject:
   m_ObjectHideFlags: 0
@@ -6872,6 +6938,10 @@ PrefabInstance:
       propertyPath: cooldownAtaque
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1128910445095750060, guid: 3f1e9f391a8434c4caa701eab05cebc3, type: 3}
+      propertyPath: m_TagString
+      value: JefeFinal
+      objectReference: {fileID: 0}
     - target: {fileID: 1128910446188405668, guid: 3f1e9f391a8434c4caa701eab05cebc3, type: 3}
       propertyPath: m_Name
       value: Dragon
@@ -6924,5 +6994,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1128910445095750059, guid: 3f1e9f391a8434c4caa701eab05cebc3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3f1e9f391a8434c4caa701eab05cebc3, type: 3}

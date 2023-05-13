@@ -8,7 +8,7 @@ public class DisparadorJugador : MonoBehaviour
 
     [SerializeField] private GameObject bala;
 
-    [SerializeField] private bool powerUp=false;
+    [SerializeField] public bool powerUp=false;
 
     [SerializeField] private GameObject bala2;
     

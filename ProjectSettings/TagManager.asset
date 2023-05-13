@@ -8,6 +8,7 @@ TagManager:
   - Enemigo2
   - ZonaMuerte
   - Checkpoint
+  - JefeFinal
   layers:
   - Default
   - TransparentFX
