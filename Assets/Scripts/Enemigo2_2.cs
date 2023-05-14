@@ -17,6 +17,8 @@ public class Enemigo2_2 : MonoBehaviour
 
     private float timer;
 
+    public AudioClip disparo;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +40,7 @@ public class Enemigo2_2 : MonoBehaviour
     void shoot()
     {
         Instantiate(bullet, bulletPos.position, Quaternion.identity);
+        AudioManager.Instance.ReproducirSonido(disparo);
     }
 
     public void TomarDaño(float daño)

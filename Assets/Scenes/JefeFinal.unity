@@ -1510,7 +1510,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 21a9474a39cca564cacf53b4359dfa13, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0
+  m_Volume: 0.168
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3500,6 +3500,7 @@ MonoBehaviour:
   - {fileID: 754397086}
   - {fileID: 1402222694}
   - {fileID: 2110758384}
+  disparo: {fileID: 8300000, guid: 9f1bd8c6c177dbf4cad3a3452d97cb87, type: 3}
 --- !u!1 &866045215
 GameObject:
   m_ObjectHideFlags: 0

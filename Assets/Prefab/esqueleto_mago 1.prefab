@@ -178,3 +178,5 @@ MonoBehaviour:
   bullet: {fileID: 1237254261038771277, guid: cc440315d40253b4e98bcb8d49ef4dd2, type: 3}
   bulletPos: {fileID: 8993505314394577414}
   vida: 3
+  cooldownAtaque: 1
+  disparo: {fileID: 8300000, guid: c4ac9ea1c7ed7d74b8769382d059143d, type: 3}

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class JefeFinal : MonoBehaviour
 {
@@ -15,8 +16,8 @@ public class JefeFinal : MonoBehaviour
 
     [SerializeField] private float vida;
     [SerializeField] public GameObject[] vidas;
+    public AudioClip disparo;
 
-    
 
 
     public void Start()
@@ -42,6 +43,7 @@ public class JefeFinal : MonoBehaviour
     {
 
         Destroy(gameObject);
+        SceneManager.LoadScene(4);
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -87,5 +89,6 @@ public class JefeFinal : MonoBehaviour
     void shoot()
     {
         Instantiate(bullet, bulletPos.position, Quaternion.identity);
+        AudioManager.Instance.ReproducirSonido(disparo);
     }
 }
