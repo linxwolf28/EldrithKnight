@@ -18,6 +18,8 @@ public class JefeFinal : MonoBehaviour
     [SerializeField] public GameObject[] vidas;
     public AudioClip disparo;
 
+    public Puntos puntos;
+
 
 
     public void Start()

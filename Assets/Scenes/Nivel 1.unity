@@ -1591,11 +1591,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6973819213867784797, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: posIni.x
-      value: 364.59
+      value: 460.08
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784797, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: posIni.y
-      value: 16.12
+      value: 10.03
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784797, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: tiempoEspera
@@ -2587,7 +2587,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 384976527}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.707162, y: -0.90640354, z: -10}
+  m_LocalPosition: {x: -3.622634, y: -0.90640354, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4891,11 +4891,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6973819213867784797, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: posIni.x
-      value: 364.59
+      value: 471.39
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784797, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: posIni.y
-      value: 16.12
+      value: 0.46
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784797, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: tiempoEspera
@@ -5409,6 +5409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 290265e8f7500174f958c997674bcd68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  espada_azul: {fileID: 1210704579}
 --- !u!1 &993712934
 GameObject:
   m_ObjectHideFlags: 0
@@ -9805,7 +9806,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6973819213867784797, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: posIni.x
-      value: 364.59
+      value: 449.97
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784797, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: posIni.y
@@ -12859,7 +12860,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6973819213867784797, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: posIni.x
-      value: 120.83
+      value: 120.21
       objectReference: {fileID: 0}
     - target: {fileID: 6973819213867784797, guid: 5b2eb795c1d77004085f3e4c17ae9bd6, type: 3}
       propertyPath: posIni.y
