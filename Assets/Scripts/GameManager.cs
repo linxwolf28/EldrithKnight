@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public Puntos puntos;
 
     private int vidas = 5;
+   
 
     public event EventHandler Muerte;
 
@@ -33,11 +34,24 @@ public class GameManager : MonoBehaviour
     {
         puntosTotales += puntosSumar;
         puntos.ActualizarPuntos(PuntosTotales);
+
+        if (puntosTotales >= 30)
+        {
+            if (vidas == 5)
+            {
+                return;
+            }
+
+            RecuperarVida();
+            puntosTotales = 0;
+            
+        }
     }
 
     public void PerderVida()
     {
         vidas -= 1;
+        
         if (vidas==0)
         {
             Muerte?.Invoke(this, EventArgs.Empty);

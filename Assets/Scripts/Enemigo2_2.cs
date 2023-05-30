@@ -20,6 +20,8 @@ public class Enemigo2_2 : MonoBehaviour
 
     public AudioClip disparo;
 
+    public AudioClip daño;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -78,7 +80,7 @@ public class Enemigo2_2 : MonoBehaviour
             spriteRenderer.color = color;
 
             GameManager.Instance.PerderVida();
-
+            AudioManager.Instance.ReproducirSonido(daño);
             Invoke("ReactivarAtaque", cooldownAtaque);
         }
     }

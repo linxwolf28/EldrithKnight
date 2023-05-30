@@ -105,6 +105,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 673854065673358895, guid: 2e6bb7b2e191b974eb6adeed5e23585a, type: 3}
+      propertyPath: "da\xF1o"
+      value: 
+      objectReference: {fileID: 8300000, guid: 8293739161c2d2e459f9d0343ecb9b54, type: 3}
+    - target: {fileID: 673854065673358895, guid: 2e6bb7b2e191b974eb6adeed5e23585a, type: 3}
       propertyPath: cooldownAtaque
       value: 1
       objectReference: {fileID: 0}

@@ -11,9 +11,9 @@ public class Enemigo : MonoBehaviour
     private SpriteRenderer spriteRenderer;
 
     [SerializeField] private float vida;
+    public AudioClip daño;
 
-
-     public void Start()
+    public void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
@@ -51,7 +51,7 @@ public class Enemigo : MonoBehaviour
             spriteRenderer.color = color;
 
             GameManager.Instance.PerderVida();
-
+            AudioManager.Instance.ReproducirSonido(daño);
             Invoke("ReactivarAtaque", cooldownAtaque);
         }
     }
