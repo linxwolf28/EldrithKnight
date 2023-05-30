@@ -47,7 +47,7 @@ public class MovimientoJugador : MonoBehaviour
     private Vector3 respawPoint;
     public GameObject fallDetector;
 
-
+    public AudioClip daño;
 
     private Animator Animator;
 
@@ -121,7 +121,6 @@ public class MovimientoJugador : MonoBehaviour
         if (enSuelo && saltar)
         {
             enSuelo = false;
-            //rb2D.AddForce(new Vector2(0f, FuerzaSalto));
             rb2D.velocity = new Vector2(0f, FuerzaSalto);
         }
         else

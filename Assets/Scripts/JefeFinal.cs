@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class JefeFinal : MonoBehaviour
 {
@@ -10,21 +11,28 @@ public class JefeFinal : MonoBehaviour
     private bool volverAtacar = true;
 
     private SpriteRenderer spriteRenderer;
+    
     public GameObject bullet;
-    public Transform bulletPos;
-    private float timer;
 
+    public Transform bulletPos;
+    
+    private float timer;
+    
+    public Slider barraVida;
+    
     [SerializeField] private float vida;
-    [SerializeField] public GameObject[] vidas;
+    
     public AudioClip disparo;
 
-    public Puntos puntos;
+    
 
 
 
     public void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        barraVida.value = vida;
     }
 
 
@@ -33,6 +41,7 @@ public class JefeFinal : MonoBehaviour
     public void TomarDaño(float daño)
     {
         vida -= daño;
+        barraVida.value = vida;
         if (vida <= 0)
         {
             Muerte();

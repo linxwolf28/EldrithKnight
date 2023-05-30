@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 623972c731b80914882d1068e76689bc
+guid: b3cb453eea0f16b40b059a71fa16be09
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1805177206359842166
-    second: "monta\xF1a3_0"
+      213: 5682406218333146638
+    second: dragon_icono_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -106,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "monta\xF1a3_0"
+      name: dragon_icono_0
       rect:
         serializedVersion: 2
-        x: 208
-        y: 136
-        width: 512
-        height: 528
+        x: 84
+        y: 105
+        width: 126
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -120,8 +120,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a822a4225e8b2f6e0800000000000000
-      internalID: -1805177206359842166
+      spriteID: e0ec7315956fbde40800000000000000
+      internalID: 5682406218333146638
       vertices: []
       indices: 
       edges: []

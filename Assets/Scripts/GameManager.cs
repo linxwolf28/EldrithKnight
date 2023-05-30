@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
         if (vidas==0)
         {
             Muerte?.Invoke(this, EventArgs.Empty);
-            //Destroy(gameObject);
+            Destroy(gameObject);
             
              SceneManager.LoadScene(3);
 
