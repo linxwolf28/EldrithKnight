@@ -49,7 +49,7 @@ public class Enemigo : MonoBehaviour
             Color color = spriteRenderer.color;
             color.a = 0.5f;
             spriteRenderer.color = color;
-
+            other.gameObject.GetComponent<MovimientoJugador>().AplicarGolpe();
             GameManager.Instance.PerderVida();
             AudioManager.Instance.ReproducirSonido(daño);
             Invoke("ReactivarAtaque", cooldownAtaque);

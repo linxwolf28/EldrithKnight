@@ -2377,7 +2377,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 419958422}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.728504, y: 2.3765173, z: -10}
+  m_LocalPosition: {x: -5.728964, y: 2.3765173, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 825286890}
@@ -3065,7 +3065,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 2
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 5642453d9c57a92458320a995f30b18e, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
@@ -3179,7 +3179,9 @@ MonoBehaviour:
   enSuelo: 0
   saltosExtrasRestantes: 0
   saltosExtras: 1
+  fuerzaGolpe: 300
   fallDetector: {fileID: 103568704}
+  "da\xF1o": {fileID: 0}
 --- !u!114 &685797040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6530,6 +6532,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1128910445095750054, guid: 3f1e9f391a8434c4caa701eab05cebc3, type: 3}
+      propertyPath: m_Mass
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 1128910445095750054, guid: 3f1e9f391a8434c4caa701eab05cebc3, type: 3}
       propertyPath: m_Constraints
       value: 3

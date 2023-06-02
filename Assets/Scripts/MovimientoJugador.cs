@@ -44,6 +44,10 @@ public class MovimientoJugador : MonoBehaviour
 
     private bool salto = false;
 
+    public float fuerzaGolpe;
+
+    private bool puedeMoverse = true;
+
     private Vector3 respawPoint;
     public GameObject fallDetector;
 
@@ -106,6 +110,11 @@ public class MovimientoJugador : MonoBehaviour
 
     private void Mover(float mover, bool saltar)
     {
+        if (!puedeMoverse)
+        {
+            return;
+        }
+
         Vector3 velocidadObjeto = new Vector2(mover, rb2D.velocity.y);
         rb2D.velocity = Vector3.SmoothDamp(rb2D.velocity, velocidadObjeto, ref velocidad, suavizadorMovimiento);
 
@@ -166,5 +175,37 @@ public class MovimientoJugador : MonoBehaviour
 
         }
 
+    }
+
+    public void AplicarGolpe()
+    {
+        puedeMoverse = false;
+
+        Vector2 direccionGolpe;
+
+        if (rb2D.velocity.x > 0 )
+        {
+            direccionGolpe = new Vector2(-1, 1);
+        }
+        else
+        {
+            direccionGolpe = new Vector2(1, 1);
+        }
+
+        rb2D.AddForce(direccionGolpe * fuerzaGolpe);
+
+        StartCoroutine(EsperarYActivaMovimiento());
+    }
+
+    IEnumerator EsperarYActivaMovimiento()
+    {
+        yield return new WaitForSeconds(0.1f);
+
+        while (!enSuelo)
+        {
+            yield return null;
+        }
+
+        puedeMoverse = true;
     }
 }

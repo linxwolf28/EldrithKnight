@@ -67,6 +67,7 @@ public class JefeFinal : MonoBehaviour
 
 
             Color color = spriteRenderer.color;
+            other.gameObject.GetComponent<MovimientoJugador>().AplicarGolpe();
             color.a = 0.5f;
             spriteRenderer.color = color;
 

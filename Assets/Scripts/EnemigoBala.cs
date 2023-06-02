@@ -38,6 +38,7 @@ public class EnemigoBala : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            other.gameObject.GetComponent<MovimientoJugador>().AplicarGolpe();
             GameManager.Instance.PerderVida();
             Destroy(gameObject);
         }

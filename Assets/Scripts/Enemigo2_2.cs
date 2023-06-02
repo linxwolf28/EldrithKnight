@@ -22,10 +22,13 @@ public class Enemigo2_2 : MonoBehaviour
 
     public AudioClip daño;
 
+    public GameObject player; 
+
     // Start is called before the first frame update
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
@@ -37,11 +40,22 @@ public class Enemigo2_2 : MonoBehaviour
 
         timer += Time.deltaTime;
 
-        if (timer > 2)
+        float distance = Vector2.Distance(transform.position, player.transform.position);
+
+
+        if(distance < 15)
         {
-            timer = 0;
-            shoot();
+            timer += Time.deltaTime;
+
+            if (timer > 2)
+            {
+                timer = 0;
+                shoot();
+            }
         }
+
+
+        
     }
 
     void shoot()
@@ -78,7 +92,7 @@ public class Enemigo2_2 : MonoBehaviour
             Color color = spriteRenderer.color;
             color.a = 0.5f;
             spriteRenderer.color = color;
-
+            other.gameObject.GetComponent<MovimientoJugador>().AplicarGolpe();
             GameManager.Instance.PerderVida();
             AudioManager.Instance.ReproducirSonido(daño);
             Invoke("ReactivarAtaque", cooldownAtaque);
